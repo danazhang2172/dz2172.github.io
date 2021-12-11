@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dana Zhang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dana Zhang Website">
+
+    <link rel="stylesheet" href="uikit.min.css" />
+    <link rel="stylesheet" href="about.css" />
+    <script src="uikit.min.js"></script>
+    <script src="uikit-icons.min.js"></script>
+
+    <script src="swup.min.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <link rel="icon" href="DZlogo.jpeg">
+</head>
+
+
+<body>
+
+    <main id="swup" class="transition-fade">
+
+        <!-- Main Body -->
+        <div class="uk-container uk-margin-large-bottom uk-container">
+
+            <!-- Nav -->
+            <nav class="uk-navbar-container uk-navbar-transparent uk-margin-large-top" uk-navbar>
+                <div class="uk-navbar-center">
+
+                    <ul class="uk-navbar-nav">
+                        <li><a href= "about.html">About</a></li>
+                        <li><a href="art.html">Art</a></li>
+                        <li class="uk-active"><a href="#">Music</a></li>
+                        <li><a href="random.html">Random</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="uk-flex-middle uk-margin-auto uk-container-xsmall">
+
+                <!-- Bio -->
+                <div class="uk-flex-middle uk-margin-medium-top" uk-grid>
+                    <div class="uk-width-0-1@m uk-padding-medium uk-padding-remove-right">
+
+                          <img data-src="temple.jpg" width="700" height="500" alt="Temple Music Prep. Concert"
+                              uk-img />
+
+                        <!-- <p></p> -->
+                    </div>
+
+                </div>
+
+
+                <div class="uk-flex-middle uk-margin-xsmall-top" uk-grid>
+                    <!-- <div class="uk-width-1-1@m uk-flex-first uk-padding"> -->
+                        <!-- <h1> &#x1F344; about me</h1> -->
+                        <p>Like many musicians, I started my "music career" with piano lessons in early elementary school. However, I found true love towards the cello
+                        in 4th grade and decided to dedicate all my energy in it rather than between both instruments.</p>
+                        <p>My favorite memories include performing with Temple Music Preparory's Chamber Orchestra in Philadelphia and going on tour with The Youth Orchestra
+                          of Bucks County in Andalusia, Spain for an international music festival. Studying the cello has helped me meet lifetime friends, refine public speaking/performance skills,
+                          and create a deeper understanding of myself.
+                        </p>
+                    <!-- </div> -->
+                    <div class="uk-width-1-1@m uk-visible@m">
+                        <!-- <img class="uk-box-shadow-large" src="./src/images/about-page/me-hawaii.jpeg" alt=""> -->
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- More Info -->
+            <div class="uk-container uk-margin-small-top">
+
+                <!-- header -->
+                <div class="uk-text-center uk-margin-small-bottom">
+                <h1><span uk-icon="world"></span>Giving Back<span uk-icon="world"></span></h1>
+                </div>
+
+                <!-- cards -->
+                <div class="uk-flex-middle uk-align-center uk-grid-large" uk-grid>
+                    <div class="uk-child-width-1-2.5@m" uk-grid uk-height-match="target: > div > .uk-card">
+
+                        <!-- COVID Data -->
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body">
+                                <h3 class="uk-card-title">D-Town Young Musicians</h3>
+                                <p>Founded to help low income students access music education.</p>
+                                <img data-src="dtown.jpg" width="500" height="440" alt="D-Town Young Musicians"
+                                    uk-img />
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- favorite song -->
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body">
+                                <h3 class="uk-card-title">The Process</h3>
+                                <p> Click to learn more!</p>
+
+                                    <script>
+                                function analyzeColor3(myColor) {
+                                	if (myColor == "P1") {
+                                		alert("Realized low-income, minority students fell behind early on in music education.");
+                                		}
+                                	else if (myColor == "P2") {
+                                		alert("Conducted 1 trial session with group of children to pinpoint needs and assess interest.");
+                                	}
+                                  else if (myColor == "P3") {
+                                		alert("Contacted musician friends to take part of the potential volunteer initiative.");
+                                	}
+                                  else if (myColor == "P4") {
+                                		alert("Friends helped expand program through social media. Local businesses donated as well!");
+                                	}
+                                	else {
+                                		alert("Hosted end of year Christmas party and was officially recognized by NHS.");
+                                	}
+                                }
+
+
+                                </script>
+                                <ul style="list-style:none;">
+
+                           <li style= "padding-top: 2em">
+                                <label>
+                                	<input type="radio" name="fav_color3" value="P1" onclick="analyzeColor3(this.value);"> Sept. 2019
+                                </label>
+                            </li>
+                            <li style= "padding-top: 3em">
+                                <label>
+                                	<input type="radio" name="fav_color3" value="P2" onclick="analyzeColor3(this.value);"> Oct. 2019
+                                </label>
+                            </li>
+                            <li style= "padding-top: 3em">
+                                <label>
+                                	<input type="radio" name="fav_color3" value="P3" onclick="analyzeColor3(this.value);"> Oct. 2019
+                                </label>
+                            </li>
+                          <li style= "padding-top: 3em">
+                                <label>
+                                	<input type="radio" name="fav_color3" value="P4" onclick="analyzeColor3(this.value);"> Nov. 2019
+                                </label>
+                           </li>
+                           <li style= "padding-top: 3em">
+                                <label>
+                                	<input type="radio" name="fav_color3" value="P5" onclick="analyzeColor3(this.value);"> Dec. 2019
+                                </label>
+                           </li>
+                              </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Socials -->
+            <div class="uk-container uk-align-center uk-width-1-3 uk-margin-xlarge-top">
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-1-1@m">
+                        <h1>Other Projects</h1>
+                    </div>
+
+
+                    <div class="uk-width-1-1@m">
+                        <ul class="uk-list">
+                            <li><span uk-icon="happy"></span> <a
+                                    href="https://themajorkeyprojectorg.wordpress.com/meet-the-2020-team/">The Major Key Project</a></li>
+                            <li><span uk-icon="youtube"></span> <a
+                                    href="https://youtu.be/5iMPeaEgpco">La Vie en Rose Project</a></li>
+                            <li><span uk-icon="youtube"></span> <a
+                                    href="https://www.youtube.com/watch?v=DjLYVXmjg3g"> Islands (Eyjar), I. Veróníkukvæði by Snorri Sigfús Birgisson. Commissioned by the Center for Gifted Young Musicians at Temple Music Prep</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    </div>
+</body>
+
+<script src="src/js/main.js"></script>
+
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10;
+  font-family: "Roboto Mono", monospace;
+}
+
+.header {
+  text-align: center;
+  padding: 40px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/*
+equal columns that sits next to each other  */
+.column {
+  -ms-flex: 2%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* column stacks */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+  <head>
+
+        <title>Dana Zhang</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dana Zhang Website">
+
+
+
+        <link rel="stylesheet" href="uikit.min.css" />
+        <link rel="stylesheet" href="about.css" />
+
+        <script src="uikit.min.js"></script>
+        <script src="uikit-icons.min.js"></script>
+
+        <script src="swup.min.js"></script>
+        <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+        <link rel="icon" href="DZlogo.jpeg">
+    </head>
+
+
+    <main id="swup" class="transition-fade">
+
+        <!-- Main Body -->
+        <div class="uk-container uk-margin-large-bottom uk-container">
+
+            <!-- Nav -->
+            <nav class="uk-navbar-container uk-navbar-transparent uk-margin-large-top" uk-navbar>
+                <div class="uk-navbar-center">
+
+                    <ul class="uk-navbar-nav">
+                        <li><a href= "about.html">About</a></li>
+                        <li class="uk-active"><a href="#">Art</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="random.html">Random</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+
+
+  <body>
+
+    <div class="row">
+
+      <div class="column">
+        <img src="abstract.jpg" style="width:110%" alt="abstract">
+        <img src="ocean.jpg" style="width:100%" alt="ocean">
+        <img src="pomegranate.jpg" style="width:100%" alt="pomegranate">
+      </div>
+
+      <div class="column">
+        <img src="cacti.jpg" style="width:100%" alt="cacti">
+        <img src="koi.jpg" style="width:100%" alt="koi">
+        <img src="celloart.jpg" style="width:100%" alt="cello art">
+      </div>
+
+      <div class="column">
+        <img src="winter.jpg" style="width:100%" alt="winter">
+        <img src="portrait.jpg" style="width:100%" alt="portrait">
+        <img src="sketch.jpg" style="width:100%" alt="sketch">
+        <p style="text-align:right;">danazhang360@gmail.com   </p>
+
+      </div>
+
+      <div class="column">
+      <img src="absfish.jpg" style="width:98%" alt="absfish">
+      <p> for art requests!</p>
+      </div>
+
+    </div>
+  </div>
+
+  </body>
+</html>

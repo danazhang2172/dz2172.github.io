@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dana Zhang</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dana Zhang Website">
+
+    <link rel="stylesheet" href="uikit.min.css" />
+    <link rel="stylesheet" href="about.css" />
+    <script src="uikit.min.js"></script>
+    <script src="uikit-icons.min.js"></script>
+
+    <script src="swup.min.js"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+
+    <link rel="icon" href="DZlogo.jpeg">
+</head>
+
+
+<body>
+
+    <main id="swup" class="transition-fade">
+
+        <!-- Main Body -->
+        <div class="uk-container uk-margin-large-bottom uk-margin-small-top uk-container">
+
+            <!-- Nav -->
+            <nav class="uk-navbar-container uk-navbar-transparent uk-margin-large-top uk-margin-small-bottom" uk-navbar>
+                <div class="uk-navbar-center">
+
+                    <ul class="uk-navbar-nav">
+                        <li><a href= "about.html">About</a></li>
+                        <li><a href="art.html">Art</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li class="uk-active"><a href="#">Random</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="uk-flex-middle uk-margin-auto uk-container-xsmall">
+
+                <!-- Bio -->
+                <div class="uk-flex-middle uk-margin-small-top" uk-grid>
+
+                  <div class="uk-width-1-1@m uk-flex-first">
+
+
+                    <div class="uk-width-1-1@m uk-padding-large uk-padding-remove-right">
+                        <h1>Birthday Countdown &#127874;</h1>
+                        <!-- <p style="text-align:center"> -->
+                        <p id="demo" style="margin-left: 227px"></p>
+                        <script>
+                        // Set the date we're counting down to
+                        var countDownDate = new Date("January 6, 2022 23:23:00").getTime();
+
+                        // Update the count down every 1 second
+                        var x = setInterval(function() {
+
+                          // Get today's date and time
+                          var now = new Date().getTime();
+
+                          // Find the distance between now and the count down date
+                          var distance = countDownDate - now;
+
+                          // Time calculations for days, hours, minutes and seconds
+                          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                          // Output the result in an element with id="demo"
+                          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                          + minutes + "m " + seconds + "s ";
+
+                          // If the count down is over, write some text
+                          if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "IT'S THE SUPERMOON";
+                          }
+                        }, 1000);
+                        </script>
+
+                    </div>
+                </div>
+
+<!-- bio 2 -->
+<div class="uk-flex-middle uk-margin-large-top" uk-grid>
+
+  <div class="uk-width-1-3@m uk-flex-first">
+      <img class="uk-box-shadow-xlarge" src="tennis.jpg" alt="tennis!" align="right">
+  </div>
+
+    <div class="uk-width-1-2@m  uk-flex-middle uk-padding-small uk-padding-remove-right">
+        <h1>I love</h1>
+        <h2 id="run" >TENNIS </h2>
+
+
+        <div class="about">
+          <p>but I also love...
+
+            <button onclick="running()">Take a guess. Click for answer!</button>
+
+            <script>
+            function running() {
+              document.querySelector("#run").innerHTML = "RUNNING";
+              // document.querySelector("#demo").style.backgroundColor = "Green";
+            }
+            </script>
+
+          </p>
+
+
+
+          </div>
+
+
+    </div>
+ </div>
+
+</div>
+
+            <!-- More Info -->
+            <div class="uk-container uk-margin-xlarge-top">
+
+                <!-- header -->
+                <div class="uk-text-center uk-margin-large-bottom">
+
+                </div>
+
+                <!-- cards -->
+                <div class="uk-flex-middle uk-align-center uk-grid-medium" uk-grid>
+                    <div class="uk-child-width-1-3@m" uk-grid uk-height-match="target: > div > .uk-card">
+
+                    </div>
+                </div>
+            </div>
+
+    <div> <p> </p>  </div>
+    <div> <p> </p>  </div>
+            <!-- Socials -->
+            <div class="uk-container uk-align-center uk-width-1-1@m uk-margin-small-top uk-margin-small-bottom">
+                <div class="uk-flex-small" uk-grid>
+                    <div class="uk-width-1-1@m">
+                        <!-- <h1 style="text-align: center"> -->
+                        <h1>2 Truths and a Lie</h1>
+                    </div>
+
+                    <div class="uk-card uk-card-secondary uk-width-1-1@m uk-card-body">
+                     <p style="text-align:center">
+                      <ul style="text-align: center">
+
+
+                      <ul class="uk-list">
+                          <li class="example">"I have a golden doodle."</li>
+                          <li>"I am ambidextrous."</li>
+                          <li>"I am the only child."</li>
+
+                          <!-- DOM querySelector -->
+                          <div class="contact">
+                          <button onclick="myFunction()">Click to reveal the lie!</button>
+
+                        <script>
+                        function myFunction() {
+                          document.querySelector("li.example").style.backgroundColor = "purple";
+                        }
+                        </script>
+                          </div>
+
+                      </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+    </main>
+    </div>
+</body>
+
+<script src="src/js/main.js"></script>
+
+</html>
